@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 90px;
+ margin-top: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #bab7b7;
+}
+
+@media only screen and (max-width: 72em) {
+  section {
+    padding: px;
+  }
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(242,242,240);
+  -webkit-clip-path: circle(600px at right 800px);
+          clip-path: circle(600px at right 800px);
+}
+
+@media only screen and (max-width: 62em) {
+  .circle {
+    -webkit-clip-path: circle(50% at 100% 100%);
+            clip-path: circle(50% at 100% 100%);
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .circle {
+    -webkit-clip-path: circle(50% at 100% 95%);
+            clip-path: circle(50% at 100% 95%);
+  }
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  padding-left: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  position: relative;
+  max-width: 20%;
+  margin-top: 20px;
+ margin-left: 15px;
+ cursor: pointer;
+}
+
+header ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  margin-top: -120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .text-box {
+  position: relative;
+  max-width: 600px;
+}
+
+@media only screen and (max-width: 72em) {
+  .content .text-box {
+    max-width: 520px;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .content .text-box {
+    max-width: 470px;
+  }
+}
+
+.content .text-box h2 {
+  color: #333;
+  font-size: 2em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 72em) {
+  .content .text-box h2 {
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .content .text-box h2 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .content .text-box h2 {
+    font-size: 2.5em;
+  }
+}
+
+.content .text-box h2 span {
+  color: rgb(31,32,34);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 72em) {
+  .content .text-box h2 span {
+    font-size: 1.1em;
+  }
+}
+
+.content .text-box p {
+  color: #333;
+  font-size: 1em;
+}
+
+.content .text-box a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .img-box {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+
+  margin-top: 50px;
+  margin-left: 50px;
+  
+}
+.content .img-box:hover{
+  -webkit-transform: translateY(-15px) scale(1.1);
+  transform: translateY(-15px) scale(1.1);
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+
+
+
+@media only screen and (max-width: 62em) {
+  .content .img-box {
+    padding-right: 0;
+    margin-right: -50px;
+  }
+}
+
+.content .img-box img {
+  max-width: 300px;
+  margin-top: 80px;
+  
+}
+
+@media only screen and (max-width: 62em) {
+  .content .img-box img {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .content .img-box img {
+    max-width: 260px;
+  }
+}
+
+ul.thumb {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Aligns the list items in a row */
+  justify-content: space-between; /* Adds space between items */
+}
+
+ul.thumb li {
+  flex: 1; /* Each list item takes up equal space */
+  text-align: center;
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+ul.thumb img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+ul.thumb p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+.thumb {
+  position: absolute;
+  left: 30%;
+  bottom: 25px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.thumb li {
+  list-style: none;
+  margin: 0 15px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.thumb li:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.thumb li img {
+  max-width: 60px;
+
+}
+ul.thumb img {
+  filter: drop-shadow(0 0 0.25rem rgb(5, 5, 5));
+ 
+ 
+   /* Optional: Adds rounded corners to the images */
+}
+/* Base styles for all devices */
+.content .img-box img {
+  width: 70%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Small screens (mobile) */
+@media (max-width: 480px) {
+  .content .img-box img {
+      width: 100%;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .content .img-box img {
+      width: 80%;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .content .img-box img {
+      width: 60%;
+  }
+}
+
